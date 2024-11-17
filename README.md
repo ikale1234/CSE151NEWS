@@ -138,10 +138,10 @@ print(tokens_lemmatized)
 
 ---
 
-### Model Evaluation
+## Model Evaluation
 
 The bag of words logistic regression model was able to achieve training 100% accuracy, and it seemed to generalize super well to the test data (97% accuracy). In terms of how the model fit in the fitting graph, the numbers show that it is in the ideal range for the model complexity (as it has similar training and testing accuracy). This also makes sense because the model is not super complex (vocab size of features inputted into a single logistic regression).
 
-## Next Possible Models
+### Next Possible Models
 
 In terms of our next models, we were thinking about experimenting with RNN models like LSTMs on the text, as they would be able to capture the positioning of words in our text as well as its meaning (compared to bag of words which just counts them). We want to also explore Transformer Encoder models on the text, as well as regression models on our numerical features derived from feature engineering (lexical diversity, text length, etc) to see if they are able to predict an article's validity.
