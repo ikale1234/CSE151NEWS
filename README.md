@@ -138,10 +138,14 @@ print(tokens_lemmatized)
 
 ---
 
-## Model Evaluation
+## Model Training and Evaluation
 
 The bag of words logistic regression model was able to achieve training 100% accuracy, and it seemed to generalize super well to the test data (97% accuracy). In terms of how the model fit in the fitting graph, the numbers show that it is in the ideal range for the model complexity (as it has similar training and testing accuracy). This also makes sense because the model is not super complex (vocab size of features inputted into a single logistic regression).
 
 ### Next Possible Models
 
 In terms of our next models, we were thinking about experimenting with RNN models like LSTMs on the text, as they would be able to capture the positioning of words in our text as well as its meaning (compared to bag of words which just counts them). We want to also explore Transformer Encoder models on the text, as well as regression models on our numerical features derived from feature engineering (lexical diversity, text length, etc) to see if they are able to predict an article's validity.
+
+### Conclusion
+
+Our first logistic regression model fared pretty well, with about 97% accuracy on the test data, although we recognize that there is still room for optimization. A possible strategy for improving this model will involve comprehensive error analysis with case examination of misclassified observations in search of a pattern in model failures and understanding the key predictors. The results from these will be used to further tune the hyperparameters of the current model and benchmark various regularization methods, besides re-evaluating our feature preprocessing and feature engineering. Another option that we discussed above, is to move onto more sophisticated modles: we plan on exploring LSTM, and might implement a Transformer Encoder architecture for natural langauge processing. Each iteration will be evaluated using the same metrics as we did for the original model to determine if there are significant improvements in model performance. These advanced models will be deployed if their performance improvement is worth the extra computation.
