@@ -19,14 +19,12 @@ This project explores text classification for identifying fake news articles. Ut
    - Cleaned and transformed text data into features like lexical diversity, average word lengths, sentence counts, and more.
    - Dropped unnecessary columns and separated data into features (X) and labels (y).
 
-2. **SMOTE for Balancing Classes**  
-   - Applied SMOTE (Synthetic Minority Oversampling Technique) to address class imbalance, ensuring equal representation of classes in the training data.
-
-3. **Model**
+2. **Model**
    - XGBoost Classifier on feature engineered numerical data
-   - Tuned parameters such as `n_estimators`, `learning_rate`, and `max_depth`.
+   - Tuned parameters such as `n_estimators`, `learning_rate`, and `max_depth`, `lambda`, and `alpha`
+   - Used Graph Search in order to optimize these parameters
 
-4. **Evaluation Metrics**  
+3. **Evaluation Metrics**  
    - Used classification metrics such as accuracy, precision, recall, and F1-score to evaluate model performance on training and testing datasets.
 
 ---
@@ -51,12 +49,10 @@ When looking at specific words that impacted the model's predictions, we extract
 
 
 
-
-
 ### Model 2 Results
 
 #### Fitting Graph Analysis:
-- The XGBoost classifier achieved optimal performance with training error around **0.04** and testing error around **0.09**, demonstrating that the model is well-fitted with minimal overfitting.
+-    The XGBoost model achieves a balance between bias and variance, as evidenced by its low training error (4%) and low test error (9%). The inclusion of L1 (Lasso) and L2 (Ridge) regularization in XGBoost helps prevent overfitting by penalizing overly complex models, which keeps the variance low while maintaining predictive performance.
 
 #### Model Performance:  
 - **Training Accuracy:** 96%  
@@ -73,9 +69,10 @@ When looking at specific words that impacted the model's predictions, we extract
 
 
 #### Analysis:  
-- Outperformed Logistic Regression with significantly better metrics. The SMOTE-balanced training data contributed to this improvement.  
+- The second model (XGBoost) demonstrates strong performance, relatively similar to the first model(Logistic Regression), although with less likelihood that it is just memorizing the data due to the engineered features as well as the reduced dimensionality. With 96% training accuracy and 91% test accuracy, we can tell that the model is able to generalize well, and it is likely not overfitting due to hyperparameter optimization.
+   
 - **Potential Improvements:**  
-   - Hyperparameter optimization via grid search or Bayesian optimization.  
+   - Hyperparameter optimization via Bayesian optimization.  
    - Use advanced NLP embeddings (e.g., TF-IDF vectors or word embeddings like Word2Vec, GloVe) to enhance text representation.  
    - Experiment with dropout or other regularization techniques to minimize overfitting further.
 
