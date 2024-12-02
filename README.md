@@ -1,7 +1,3 @@
-#### Project Title: Fake News Classification with SMOTE and Advanced Models
-
----
-
 ### Overview
 This project explores text classification for identifying fake news articles. Utilizing advanced natural language processing techniques and machine learning models, the goal is to improve prediction accuracy for imbalanced datasets.
 
