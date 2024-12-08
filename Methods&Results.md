@@ -48,11 +48,11 @@ After preprocessing, we moved to building our models using our preprocessed data
    - Created Error Complexity Graph to evaluate different values of regularization parameter alpha
 
 ### Additional Observation Steps
-We also measured our TF-IDF scores on both the title and text entries. Below are the findings:
+We also measured our TF-IDF scores on both the title and text entries. This was to mainly help us figure out what specific words/phrases may contribute to classifying our observations. Below are the findings:
 Title:
-![tfidf][]
+![tfidf](images/tfidftitle.png)
 Text:
-![tfidf][]
+![tfidf](images/tfidftext.png)
 
 ***
 
@@ -71,7 +71,7 @@ For our test set using the same model, our results were:
    - Accuracy: 0.97
 
 Error Complexity Graph:
-![complexity][]
+![complexity](ecms3.png)
      
 #### Model 2:
 For Model 2 (XGBoost), our resulting metrics on the training set were the following: 
@@ -87,4 +87,4 @@ For our test set using the same model, our results were:
    - Accuracy: 0.91
 
 Error Complexity Graph:
-![complexity][]
+![complexity](ecms4.png)
