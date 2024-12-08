@@ -14,7 +14,7 @@ Lastly, we engineered a "lexical diversity" feature, which spits out the number 
 
 
 
-### Model 1 Method
+### Model 1
 1. **Preprocessing for Model**  
    - Applied CountVectorizer on the text data on each observation, which counts each word within the dataset vocabulary and creates a vector for the counts of each possible word. This is a bag of words vector.
 
@@ -24,9 +24,13 @@ Lastly, we engineered a "lexical diversity" feature, which spits out the number 
 
 3. **Evaluation Metrics**  
    - Used classification metrics such as accuracy, precision, recall, and F1-score to evaluate model performance on training and testing datasets.
+  
+4. **Results**
+   - Training Accuracy: 100%  
+   - Testing Accuracy: 97%
 
 
-### Model 2 Method
+### Model 2
 1. **Preprocessing for Model**  
    - Cleaned and transformed text data into features like lexical diversity, average word lengths, sentence counts, and more.
    - Dropped unnecessary columns and separated data into features (X) and labels (y).
@@ -38,3 +42,7 @@ Lastly, we engineered a "lexical diversity" feature, which spits out the number 
 
 3. **Evaluation Metrics**  
    - Used classification metrics such as accuracy, precision, recall, and F1-score to evaluate model performance on training and testing datasets.
+
+4. **Results**
+   - Training Accuracy: 96%  
+   - Testing Accuracy: 91%  
