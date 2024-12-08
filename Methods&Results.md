@@ -14,12 +14,12 @@ Lastly, we engineered a "lexical diversity" feature, which spits out the number 
 
 
 
-### Model 1
+### Model 1 (Bag of Words Logistic Regression)
 1. **Preprocessing for Model**  
    - Applied CountVectorizer on the text data on each observation, which counts each word within the dataset vocabulary and creates a vector for the counts of each possible word. This is a bag of words vector.
 
 2. **Model**
-   - Logistic Regression model on bag of words vector
+   - Logistic Regression model on this bag of words vector
    - Tuned C parameter
 
 3. **Evaluation Metrics**  
@@ -30,7 +30,7 @@ Lastly, we engineered a "lexical diversity" feature, which spits out the number 
    - Testing Accuracy: 97%
 
 
-### Model 2
+### Model 2 (XGBoost)
 1. **Preprocessing for Model**  
    - Cleaned and transformed text data into features like lexical diversity, average word lengths, sentence counts, and more.
    - Dropped unnecessary columns and separated data into features (X) and labels (y).
