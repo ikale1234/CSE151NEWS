@@ -73,7 +73,7 @@ For our test set using the same model, our results were:
    - Accuracy: 0.97
 
 Error Complexity Graph:
-![complexity](ecms3.png)
+![complexity](images/ecms3.png)
      
 #### Model 2:
 For Model 2 (XGBoost), our resulting metrics on the training set were the following: 
@@ -89,4 +89,4 @@ For our test set using the same model, our results were:
    - Accuracy: 0.91
 
 Error Complexity Graph:
-![complexity](ecms4.png)
+![complexity](images/ecms4.png)
