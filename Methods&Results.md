@@ -45,6 +45,7 @@ For Model 1 (Bag of Words Logistic Regression), our resulting metrics on the tra
    - Recall: 1.00
    - F1 Score: 1.00
    - Accuracy: 1.00
+
 For our test set using the same model, our results were:
    - Precision: 0.97
    - Recall: 0.98
@@ -57,6 +58,7 @@ For Model 2 (XGBoost), our resulting metrics on the training set were the follow
    - Recall: 0.94 (Class 0); 0.98 (Class 1)
    - F1 Score: 0.96 (Class 0); 0.96 (Class 1)
    - Accuracy: 0.96
+
 For our test set using the same model, our results were:
    - Precision: 0.92 (Class 0); 0.89 (Class 1)
    - Recall: 0.87 (Class 0); 0.93 (Class 1)
