@@ -24,11 +24,6 @@ Lastly, we engineered a "lexical diversity" feature, which spits out the number 
 
 3. **Evaluation Metrics**  
    - Used classification metrics such as accuracy, precision, recall, and F1-score to evaluate model performance on training and testing datasets.
-  
-4. **Results**
-   - Training Accuracy: 100%  
-   - Testing Accuracy: 97%
-
 
 ### Model 2 (XGBoost)
 1. **Preprocessing for Model**  
@@ -43,6 +38,27 @@ Lastly, we engineered a "lexical diversity" feature, which spits out the number 
 3. **Evaluation Metrics**  
    - Used classification metrics such as accuracy, precision, recall, and F1-score to evaluate model performance on training and testing datasets.
 
-4. **Results**
-   - Training Accuracy: 96%  
-   - Testing Accuracy: 91%  
+### Results
+#### Model 1:
+For Model 1 (Bag of Words Logistic Regression), our resulting metrics on the training set were the following: 
+   - Precision: 1.00
+   - Recall: 1.00
+   - F1 Score: 1.00
+   - Accuracy: 1.00
+For our test set using the same model, our results were:
+   - Precision: 0.97
+   - Recall: 0.98
+   - F1 Score: 0.97
+   - Accuracy: 0.97
+     
+#### Model 2:
+For Model 2 (XGBoost), our resulting metrics on the training set were the following: 
+   - Precision: 0.97 (Class 0); 0.95 (Class 1)
+   - Recall: 0.94 (Class 0); 0.98 (Class 1)
+   - F1 Score: 0.96 (Class 0); 0.96 (Class 1)
+   - Accuracy: 0.96
+For our test set using the same model, our results were:
+   - Precision: 0.92 (Class 0); 0.89 (Class 1)
+   - Recall: 0.87 (Class 0); 0.93 (Class 1)
+   - F1 Score: 0.90 (Class 0); 0.91 (Class 1)
+   - Accuracy: 0.91
