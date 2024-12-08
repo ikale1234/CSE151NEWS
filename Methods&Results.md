@@ -1,4 +1,4 @@
-
+## Methods
 
 ### Initial Data Exploration/Preprocessing
 
@@ -37,8 +37,10 @@ Lastly, we engineered a "lexical diversity" feature, which spits out the number 
 
 3. **Evaluation Metrics**  
    - Used classification metrics such as accuracy, precision, recall, and F1-score to evaluate model performance on training and testing datasets.
+   
+***
 
-### Results
+## Results
 #### Model 1:
 For Model 1 (Bag of Words Logistic Regression), our resulting metrics on the training set were the following: 
    - Precision: 1.00
