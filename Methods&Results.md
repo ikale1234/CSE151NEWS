@@ -49,8 +49,10 @@ After preprocessing, we moved to building our models using our preprocessed data
 
 ### Additional Observation Steps
 We also measured our TF-IDF scores on both the title and text entries. This was to mainly help us figure out what specific words/phrases may contribute to classifying our observations. Below are the findings:
+
 Title:
 ![tfidf](images/tfidftitle.png)
+
 Text:
 ![tfidf](images/tfidftext.png)
 
