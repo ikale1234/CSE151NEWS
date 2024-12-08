@@ -1,8 +1,13 @@
 ## Methods
 
-### Initial Data Exploration/Preprocessing
+### Initial Data Exploration & Preprocessing 
 
-The initial dataset contained only the article title, the text, and its fake news binary classification label (0/1). We generated new features of text and title word length by splitting both features by the ' ' character and getting its length. We created a pair-plot to see if these features had any impact on the output label:
+Once we got hold of our dataset, the first thing we analyzed was the overall data. Initially, we dealt with an 8117x4 dataset, which while there were many observations, we only had a few features to work with (that being an id column which was negligible, a column for titles, a column for article text, and a label which indicated if the article was real (0) or fake (1)). As such, we decided on doing a deeper dive to see how exactly our text data was like, grabbing more metadata rather than just accepting the text entries as is. Below are our findings/methodology for this initial data exploration:
+   - We surprisingly had no null/blank entries
+   - We were working with more entries that were fake than real
+   - We checked word counts on our text (min: 1.000000, average: 407.745596, median: 368.000000, max: 7304.000000) and title columns (min: 1.000000, average: 12.093754, median: 11.000000, max: 45.000000)
+
+Given we only had a few features to work with, we generated new features of text and title word length by splitting both features by the ' ' character and getting its length. We created a pair-plot to see if these features had any impact on the output label:
 
 ![pairplot](images/length_pairplot.png)
 
@@ -10,9 +15,9 @@ We then used a natural language tokenizer (NLTK) to generate word tokens after p
 
 ![df](images/cleaned_df.png)
 
-Lastly, we engineered a "lexical diversity" feature, which spits out the number of unique tokens in each title and text. This was done by simply creating a set of each list of tokens per observations (which automatically removes duplicates), and taking the length.
+We also engineered a "lexical diversity" feature, which spits out the number of unique tokens in each title and text. This was done by simply creating a set of each list of tokens per observations (which automatically removes duplicates), and taking the length.
 
-
+After preprocessing, we moved to building our models using our preprocessed dataset. Initially, we tried a more general Bag of Words-style Logistic Regression to see how well we could classify our data. Later on for our subsequent milestone, we tested how our model performed on an XGBoost model. Below are the specifications for our models:
 
 ### Model 1 (Bag of Words Logistic Regression)
 1. **Preprocessing for Model**  
@@ -24,6 +29,8 @@ Lastly, we engineered a "lexical diversity" feature, which spits out the number 
 
 3. **Evaluation Metrics**  
    - Used classification metrics such as accuracy, precision, recall, and F1-score to evaluate model performance on training and testing datasets.
+   - Computed True Positive, True Negative, False Positive, False Negative values
+   - Created Error Complexity Graph to evaluate different values of regularization parameter C
 
 ### Model 2 (XGBoost)
 1. **Preprocessing for Model**  
@@ -37,7 +44,16 @@ Lastly, we engineered a "lexical diversity" feature, which spits out the number 
 
 3. **Evaluation Metrics**  
    - Used classification metrics such as accuracy, precision, recall, and F1-score to evaluate model performance on training and testing datasets.
-   
+   - Computed True Positive, True Negative, False Positive, False Negative values
+   - Created Error Complexity Graph to evaluate different values of regularization parameter alpha
+
+### Additional Observation Steps
+We also measured our TF-IDF scores on both the title and text entries. Below are the findings:
+Title:
+![tfidf][]
+Text:
+![tfidf][]
+
 ***
 
 ## Results
@@ -53,6 +69,9 @@ For our test set using the same model, our results were:
    - Recall: 0.98
    - F1 Score: 0.97
    - Accuracy: 0.97
+
+Error Complexity Graph:
+![complexity][]
      
 #### Model 2:
 For Model 2 (XGBoost), our resulting metrics on the training set were the following: 
@@ -66,3 +85,6 @@ For our test set using the same model, our results were:
    - Recall: 0.87 (Class 0); 0.93 (Class 1)
    - F1 Score: 0.90 (Class 0); 0.91 (Class 1)
    - Accuracy: 0.91
+
+Error Complexity Graph:
+![complexity][]
