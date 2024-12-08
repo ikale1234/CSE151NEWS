@@ -4,11 +4,11 @@
 
 The initial dataset contained only the article title, the text, and its fake news binary classification label (0/1). We generated new features of text and title word length by splitting both features by the ' ' character and getting its length. We created a pair-plot to see if these features had any impact on the output label:
 
-img here
+![pairplot](images/length_pairplot.png)
 
 We then used a natural language tokenizer (NLTK) to generate word tokens after processing each word to prevent duplicate/meaningless tokens (removing capitalization, plurals, stop words, etc). After creating these tokens, we generated new text and title features that contained these "cleaned tokens" in replacement of these original tokens, all separated by space. 
 
-img here
+![df](images/cleaned_df.png)
 
 Lastly, we engineered a "lexical diversity" feature, which spits out the number of unique tokens in each title and text. This was done by simply creating a set of each list of tokens per observations (which automatically removes duplicates), and taking the length.
 
