@@ -129,3 +129,5 @@ Finally, once everything is addressed involving the model, I can see room for en
 
 Overall, we think that this project is a step towards combating the spread of misinformation online, it is far from a definitive solution. Language being a constantly changing mode of communication, evolving tactics of spreading misinformation, and the sheer complexity of human communication mean there will constantly be new challenges to address. That being said, this project has laid a foundation, and we are excited for the potential future directions we could go in refining and expanding our model. 
 
+# Statement of Contribution
+
