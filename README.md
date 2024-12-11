@@ -131,3 +131,53 @@ Overall, we think that this project is a step towards combating the spread of mi
 
 # Statement of Contribution
 
+### **Name: Adalina Ma**  
+**Title:** Writer, Data Analyst, and Contributor  
+**Contribution:**  
+Adalina made significant contributions to the project by authoring and updating the README file multiple times, ensuring it was thorough and well-organized. She also worked on simple data cleaning, exploratory analysis, and added false negative (FN) and false positive (FP) scores to the results. Adalina actively participated in writing observations and conclusions, collaborating with the team throughout.  
+
+---
+
+### **Name: R.R. Bhushan**  
+**Title:** Data Cleaner and Graph Creator  
+**Contribution:**  
+R.R. Bhushan worked on cleaning up the branch notebook, fixing pairplot graphs, splitting graphs, and adding observations to the exploratory steps. Additionally, Bhushan authored the first commit and contributed early foundational work to the project.  
+
+---
+
+### **Name: G.A. Simmons**  
+**Title:** Model Trainer and Graph Creator  
+**Contribution:**  
+G.A. Simmons created error complexity graphs, confusion matrices, and trained the XGBoost model for the project. They also contributed to writing the conclusion for the README file, ensuring the results were well-documented.  
+
+---
+
+### **Name: I. Kale**  
+**Title:** Preprocessing Specialist and Model Tester  
+**Contribution:**  
+I. Kale contributed extensively to text preprocessing and the creation of TF-IDF processes and graphs. They worked on embedding techniques, authored parts of the README, and developed models, including an LSTM (even though the results were not satisfactory). Kale ensured that preprocessing and model descriptions were effectively integrated into the project's documentation.  
+
+---
+
+### **Name: J. Canicosa**  
+**Title:** Text Preprocessing and Graph Creator  
+**Contribution:**  
+J. Canicosa worked on text preprocessing, authored the README section on TF-IDF processes, and created TF-IDF graphs for text and titles. Their efforts helped refine the data for better model performance.  
+
+---
+
+### **Name: R.T. Doh**  
+**Title:** Data Cleaner and Metric Recorder  
+**Contribution:**  
+R.T. Doh focused on cleaning and preparing data in Colab. They added model prediction measurements and ensured the data was organized and ready for analysis.  
+
+---
+
+### **Teamwork and Collaboration:**  
+The team worked cohesively, with members specializing in specific tasks such as writing, coding, data preprocessing, and model training. Everyone provided feedback during the steps and collaborated on the README documentation, making it a team effort to ensure the project was completed successfully.  
+
+---
+
+### **Final Note:**  
+No team member was listed as having done nothing, and everyone had distinct and meaningful contributions to the project's success.
+
