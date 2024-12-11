@@ -32,6 +32,7 @@ After preprocessing, we moved to building our models using our preprocessed data
 2. **Model**
    - Logistic Regression model on this bag of words vector
    - Tuned C parameter
+      - Inverse of Regularization Strength, with lower values leading to stronger regularization
 
 3. **Evaluation Metrics**  
    - Used classification metrics such as accuracy, precision, recall, and F1-score to evaluate model performance on training and testing datasets.
@@ -46,6 +47,11 @@ After preprocessing, we moved to building our models using our preprocessed data
 2. **Model**
    - XGBoost Classifier on feature engineered numerical data
    - Tuned parameters such as `n_estimators`, `learning_rate`, and `max_depth`, `lambda`, and `alpha`
+      - `n_estimators`: Specifies quantity of Gradient boosted trees
+      - `learning_rate`: Specifies step size for each iteration
+      - `max_depth`: Maximum depth of decision tree
+      - `lambda`: L2 Regularization on weights
+      - `alpha`: L1 Regularization on weights
    - Used Graph Search in order to optimize these parameters
 
 3. **Evaluation Metrics**  
@@ -141,7 +147,7 @@ Adalina made significant contributions to the project by authoring and updating 
 ### **Name: Ronit Bhushan**  
 **Title:** Data Cleaner and Graph Creator  
 **Contribution:**  
-R.R. Bhushan worked on cleaning up the branch notebook, fixing pairplot graphs, splitting graphs, and adding observations to the exploratory steps. Additionally, Bhushan authored the first commit and contributed early foundational work to the project.  
+R.R. Bhushan worked on cleaning up the branch notebook, fixing pairplot graphs, splitting graphs, and adding observations to the exploratory steps along with additional preprocessing related steps. Additionally, he authored the first commit and contributed early foundational work to the project. Along the way if there were any ambiguities during our team's discussions, he would help by clarifying any of our group's questions to the TA or provide relevant research that would help to refine our project. 
 
 ---
 
@@ -174,7 +180,7 @@ R.T. Doh focused on cleaning and preparing data in Colab. They added model predi
 ---
 
 ### **Teamwork and Collaboration:**  
-The team worked cohesively, with members specializing in specific tasks such as writing, coding, data preprocessing, and model training. Everyone provided feedback during the steps and collaborated on the README documentation, making it a team effort to ensure the project was completed successfully.  
+The team worked cohesively, with members specializing in specific tasks such as writing, coding, data preprocessing, and model training. Everyone provided feedback during each of the steps through frequent meetings and discussion, pitching in ideas and supporting each other. Further, we all collaborated on the README documentation, making it a team effort to ensure the project was completed successfully.  
 
 ---
 
