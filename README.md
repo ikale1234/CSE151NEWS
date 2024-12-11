@@ -148,7 +148,7 @@ R.R. Bhushan worked on cleaning up the branch notebook, fixing pairplot graphs, 
 ### **Name: Gavin Simmons**  
 **Title:** Model Trainer and Graph Creator  
 **Contribution:**  
-G.A. Simmons created error complexity graphs, confusion matrices, and trained the XGBoost model for the project. They also contributed to writing the conclusion for the README file, ensuring the results were well-documented.  
+G. Simmons created error complexity graphs, confusion matrices, and trained the XGBoost model for the project. They also contributed to writing the READMEs, and the discussion and conclusion for the final README file, ensuring the results were well-documented.  
 
 ---
 
